@@ -10,6 +10,16 @@ package main.java.com.leetcode;
 public class MaxConsecutiveOnes {
 
     public int findMaxConsecutiveOnes(int[] nums) {
-        return 0;
+        int temp = 0;
+        int result = temp;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 1) {
+                temp++;
+                result = Math.max(temp, result);
+            } else {
+                temp = 0;
+            }
+        }
+        return result;
     }
 }
