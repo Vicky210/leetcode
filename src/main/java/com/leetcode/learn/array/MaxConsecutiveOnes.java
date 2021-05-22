@@ -9,7 +9,7 @@ package main.java.com.leetcode.learn.array;
 
 public class MaxConsecutiveOnes {
 
-    public int findMaxConsecutiveOnes(int[] nums) {
+    public static int findMaxConsecutiveOnes(int[] nums) {
         int temp = 0;
         int result = temp;
         for (int i = 0; i < nums.length; i++) {

@@ -6,7 +6,7 @@ package main.java.com.leetcode.learn.array;
 
 public class EvenNumberOfDigits {
 
-    public int findNumbers(int[] nums) {
+    public static int findNumbers(int[] nums) {
         int result = 0;
         int temp;
         int digits;
