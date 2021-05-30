@@ -2,6 +2,7 @@ package main.java.com.leetcode;
 
 
 import main.java.com.leetcode.learn.array.ValidMountainArray;
+import main.java.com.leetcode.learn.linkedlist.MyLinkedList;
 
 public class MainProgram {
 
@@ -11,9 +12,10 @@ public class MainProgram {
      */
 
     public static void main(String[] args) {
-        int[] nums1 = new int[]{0,3,2,1};
-
-       ValidMountainArray.validMountainArray(nums1);
-
+        MyLinkedList h = new MyLinkedList();
+        h.addAtIndex(0,10);
+        h.addAtIndex(0,20);
+        h.addAtIndex(1,30);
+        h.get(0);
     }
 }
