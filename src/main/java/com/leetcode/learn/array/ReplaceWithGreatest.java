@@ -12,7 +12,7 @@ public class ReplaceWithGreatest {
         int maxIndex = -1;
         for(int i = 0; i< length-1 ;i++) {
             if(maxIndex == -1 || maxIndex <= i) {
-                findMaxIndex(arr, i+1, length);
+                maxIndex = findMaxIndex(arr, i+1, length);
             }
             result[i] = arr[maxIndex];
         }
