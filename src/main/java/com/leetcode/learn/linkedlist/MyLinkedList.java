@@ -2,7 +2,7 @@ package main.java.com.leetcode.learn.linkedlist;
 
 public class MyLinkedList {
 
-    public SinglyLinkedListNode head;
+    public ListNode head;
     public int length;
 
     public MyLinkedList() {
@@ -12,9 +12,9 @@ public class MyLinkedList {
 
     public void addAtHead(int val) {
         if(head == null) {
-            head = new SinglyLinkedListNode(val);
+            head = new ListNode(val);
         } else {
-            SinglyLinkedListNode newNode = new SinglyLinkedListNode(val);
+            ListNode newNode = new ListNode(val);
             newNode.next = head;
             head  = newNode;
         }
@@ -24,7 +24,7 @@ public class MyLinkedList {
     public int get(int index) {
         if(length < index+1)
             return -1;
-        SinglyLinkedListNode runner = head;
+        ListNode runner = head;
         while(index != 0) {
             runner = runner.next;
             index--;
@@ -37,8 +37,8 @@ public class MyLinkedList {
             addAtHead(val);
             return;
         }
-        SinglyLinkedListNode newNode = new SinglyLinkedListNode(val);
-        SinglyLinkedListNode runner = head;
+        ListNode newNode = new ListNode(val);
+        ListNode runner = head;
         while(runner.next != null)
             runner = runner.next;
         runner.next = newNode;
@@ -56,9 +56,9 @@ public class MyLinkedList {
         }
         if(length < index)
             return;
-        SinglyLinkedListNode newNode = new SinglyLinkedListNode(val);
-        SinglyLinkedListNode runner = head;
-        SinglyLinkedListNode prev = null;
+        ListNode newNode = new ListNode(val);
+        ListNode runner = head;
+        ListNode prev = null;
         while(index != 0) {
             prev = runner;
             runner = runner.next;
@@ -77,8 +77,8 @@ public class MyLinkedList {
             length--;
             return;
         }
-        SinglyLinkedListNode runner = head;
-        SinglyLinkedListNode prev = null;
+        ListNode runner = head;
+        ListNode prev = null;
         while(index != 0) {
             prev = runner;
             runner = runner.next;
