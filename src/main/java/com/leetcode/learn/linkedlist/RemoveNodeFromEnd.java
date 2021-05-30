@@ -7,7 +7,7 @@ public class RemoveNodeFromEnd {
         dummy.next = head;
         ListNode first = dummy;
         ListNode second = dummy;
-        for(int i = 0; i< n; i++)
+        for(int i = 0; i<= n; i++)
             first = first.next;
         while(first != null) {
             first = first.next;
