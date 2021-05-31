@@ -1,8 +1,8 @@
 package main.java.com.leetcode;
 
-
-import main.java.com.leetcode.learn.array.ValidMountainArray;
+import main.java.com.leetcode.learn.linkedlist.IsPalindrome;
 import main.java.com.leetcode.learn.linkedlist.MyLinkedList;
+import main.java.com.leetcode.learn.linkedlist.RemoveElement;
 
 public class MainProgram {
 
@@ -13,9 +13,10 @@ public class MainProgram {
 
     public static void main(String[] args) {
         MyLinkedList h = new MyLinkedList();
-        h.addAtIndex(0,10);
-        h.addAtIndex(0,20);
-        h.addAtIndex(1,30);
-        h.get(0);
+        h.addAtTail(1);
+        h.addAtTail(2);
+        h.addAtTail(2);
+        h.addAtTail(1);
+        IsPalindrome.isPalindrome(h.head);
     }
 }
