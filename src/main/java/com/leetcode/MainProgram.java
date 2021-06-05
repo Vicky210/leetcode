@@ -1,8 +1,7 @@
 package main.java.com.leetcode;
 
-import main.java.com.leetcode.learn.linkedlist.IsPalindrome;
-import main.java.com.leetcode.learn.linkedlist.MyLinkedList;
-import main.java.com.leetcode.learn.linkedlist.RemoveElement;
+
+import main.java.com.leetcode.learn.hashtable.HashSet;
 
 public class MainProgram {
 
@@ -12,11 +11,10 @@ public class MainProgram {
      */
 
     public static void main(String[] args) {
-        MyLinkedList h = new MyLinkedList();
-        h.addAtTail(1);
-        h.addAtTail(2);
-        h.addAtTail(2);
-        h.addAtTail(1);
-        IsPalindrome.isPalindrome(h.head);
+        HashSet obj = new HashSet();
+        obj.add(45);
+        obj.remove(45);
+        boolean param_3 = obj.contains(45);
+
     }
 }
