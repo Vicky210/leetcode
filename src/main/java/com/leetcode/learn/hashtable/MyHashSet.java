@@ -9,13 +9,13 @@ import java.util.List;
  * At most 104 calls will be made to add, remove, and contains.
  */
 
-public class HashSet {
+public class MyHashSet {
 
     Bucket[] bucket;
     int bucketSize;
 
     /** Initialize your data structure here. */
-    public HashSet() {
+    public MyHashSet() {
         this.bucketSize = 769;
         bucket = new Bucket[769];
     }

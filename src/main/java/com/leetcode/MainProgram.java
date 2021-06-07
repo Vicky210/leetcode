@@ -1,7 +1,6 @@
 package main.java.com.leetcode;
 
-
-import main.java.com.leetcode.learn.hashtable.HashSet;
+import main.java.com.leetcode.learn.hashtable.GroupAnagrams;
 
 public class MainProgram {
 
@@ -11,10 +10,7 @@ public class MainProgram {
      */
 
     public static void main(String[] args) {
-        HashSet obj = new HashSet();
-        obj.add(45);
-        obj.remove(45);
-        boolean param_3 = obj.contains(45);
+        GroupAnagrams.groupAnagrams(new String[]{"ddddddddddg","dgggggggggg"});
 
     }
 }

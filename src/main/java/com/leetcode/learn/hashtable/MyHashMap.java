@@ -4,11 +4,11 @@ package main.java.com.leetcode.learn.hashtable;
  * Design a HashMap without using any built-in hash table libraries.
  */
 
-public class HashMap {
+public class MyHashMap<I extends Number, I1 extends Number> {
     /** Initialize your data structure here. */
     Bucket[] bucket;
     int size;
-    public HashMap() {
+    public MyHashMap() {
         this.size = 769;
         this.bucket = new Bucket[769];
     }
